@@ -22,9 +22,9 @@ export default function pokemon({ pokeman }) {
         <p key={index}>{type.type.name}</p>
       ))}
       <p className="mt-10 text-center">
-        <Link href="/">
+        {/* <Link href="/">
           <a className="text-2xl underline">Home</a>
-        </Link>
+        </Link> */}
       </p>
     </Layout>
   );
