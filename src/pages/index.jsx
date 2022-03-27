@@ -27,7 +27,7 @@ export default function Home({ pokemon }) {
   );
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps() {
   try {
     const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=150');
     const { results } = await res.json();
@@ -35,6 +35,7 @@ export async function getStaticProps(context) {
       const paddedId = ('00' + (index + 1)).slice(-3);
 
       const image = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${paddedId}.png`;
+
       return { ...pokeman, image };
     });
     return {
