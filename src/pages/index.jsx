@@ -31,10 +31,11 @@ export async function getStaticProps(context) {
   try {
     const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=150');
     const { results } = await res.json();
-    const pokemon = results.map((pokemon, index) => {
+    const pokemon = results.map((pokeman, index) => {
       const paddedId = ('00' + (index + 1)).slice(-3);
+
       const image = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${paddedId}.png`;
-      return { ...pokemon, image };
+      return { ...pokeman, image };
     });
     return {
       props: { pokemon },
