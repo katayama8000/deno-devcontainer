@@ -1,14 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { useBgLightBlue } from 'hooks/useBgLightBlue';
 import Head from 'next/head';
 import { useCallback, useEffect, useState } from 'react';
 import styles from 'src/styles/Home.module.css';
 import Link from 'next/link';
 import React from 'react';
 
-export default function Home(props) {
-  const { count, handleClick } = props;
-  useBgLightBlue();
+export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
