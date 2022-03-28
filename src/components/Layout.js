@@ -1,7 +1,5 @@
 
 import Head from 'next/head';
-import { useCallback, useEffect, useState } from 'react';
-import styles from 'src/styles/Home.module.css';
 
 export default function Layout({title,children}) {
     return (
