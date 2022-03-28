@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import Layout from '../components/Layout';
+import Layout from '../../components/Layout';
 import NextLink from 'next/link';
 export default function pokemon({ pokeman }) {
   return (
