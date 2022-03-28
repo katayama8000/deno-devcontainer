@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import Layout from '../components/Layout';
-import Link from 'next/Link';
+import NextLink from 'next/Link';
 export default function pokemon({ pokeman }) {
   return (
     <Layout title={pokeman.name}>
@@ -22,9 +22,9 @@ export default function pokemon({ pokeman }) {
         <p key={index}>{type.type.name}</p>
       ))}
       <p className="mt-10 text-center">
-        <Link href="/">
+        <NextLink href="/">
           <a className="text-2xl underline">Home</a>
-        </Link>
+        </NextLink>
       </p>
     </Layout>
   );
