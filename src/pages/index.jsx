@@ -5,7 +5,9 @@ import Layout from '../components/Layout';
 export default function Home({ pokemon }) {
   return (
     <Layout title="NextJS Pokedex">
-      <h1 className="mb-8 text-4xl text-center ">The Nextjs Pokedex</h1>
+      <h1 className="mb-8 text-4xl text-center ">
+        The Nextjs Pokedex
+      </h1>
       <ul>
         {pokemon.map((pokeman, index) => (
           <li key={index}>
