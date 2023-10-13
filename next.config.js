@@ -1,10 +1,13 @@
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
+/** @type {import('next').NextConfig} */
+const withPWA = require("next-pwa")({
+  dest: "public",
+  register: true,
+  skipWaiting: true,
 });
 
-module.exports = withBundleAnalyzer({
-  reactStrictMode: false,
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+const nextConfig = withPWA({
+  reactStrictMode: true,
+  swcMinify: true,
 });
+
+module.exports = nextConfig
