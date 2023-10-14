@@ -1,3 +1,4 @@
+import { Notification } from '@/components/notification';
 import { db } from '@lib/firebase';
 import { addDoc, collection } from 'firebase/firestore';
 import Head from 'next/head';
@@ -21,6 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <Notification />
         <button onClick={add}>add to firebase</button>
       </main>
     </>

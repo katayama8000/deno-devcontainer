@@ -4,6 +4,7 @@ import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage';
+import { getMessaging, getToken, onMessage } from 'firebase/messaging';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -25,3 +26,30 @@ export const app = initializeApp(firebaseConfig);
 export const auth = getAuth();
 export const storage = getStorage();
 export const db = getFirestore();
+
+// const messaging = getMessaging(app);
+
+// export const requestForToken = async (): Promise<void> => {
+//   try {
+//     const currentToken = await getToken(messaging, {
+//       vapidKey: 'OUbNltaItqSW9ElfZYikBADkaNemzN9yl3XQMn5YMU0',
+//     });
+//     if (currentToken) {
+//       console.log('current token for client: ', currentToken);
+//     } else {
+//       console.log(
+//         'No registration token available. Request permission to generate one.'
+//       );
+//     }
+//   } catch (err) {
+//     console.log('An error occurred while retrieving token. ', err);
+//   }
+// };
+
+// export const onMessageListener = () =>
+//   new Promise((resolve) => {
+//     onMessage(messaging, (payload) => {
+//       console.log('payload', payload);
+//       resolve(payload);
+//     });
+//   });
