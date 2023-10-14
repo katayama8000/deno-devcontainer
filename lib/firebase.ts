@@ -18,7 +18,7 @@ export const firebaseConfig = {
   measurementId: process.env.NEXT_PUBLIC_MEASUREMENT_ID,
 };
 
-console.table(firebaseConfig);
+// console.table(firebaseConfig);
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
