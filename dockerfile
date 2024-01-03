@@ -1,4 +1,4 @@
-FROM denoland/deno:1.30.3
+FROM denoland/deno:latest
 WORKDIR /workspace
 
 RUN apt-get update && apt-get install -y git
