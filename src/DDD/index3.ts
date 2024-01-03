@@ -13,7 +13,7 @@ interface IUserRepository {
   store(): void;
 }
 
-  class UserRepositoryWithMySQL implements IUserRepository {
+class UserRepositoryWithMySQL implements IUserRepository {
   find(): User {
     // connect MySQL and find user
     return new User("test", 20);
