@@ -4,7 +4,7 @@ services:
   deno_devcontainer:
     build:
       context: .
-      dockerfile: dockerfile
+      dockerfile: Dockerfile
     container_name: deno_devcontainer
     volumes:
       - .:/workspace
