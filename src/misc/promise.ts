@@ -9,10 +9,9 @@ const promiseFunc = () =>
 const main = async () => {
   console.time("func");
   try {
-    const val = await promiseFunc();
-    console.log(val);
+    promiseFunc();
   } catch (err) {
-    console.log(err);
+    console.log("-----", err, "-----");
   }
   console.timeEnd("func");
 };

@@ -1,0 +1,5 @@
+- what is problem
+  - Circle Entity が owner と　member を管理している
+  - Cirlce の上限は 30 人 までだけど、`member.length() >= 29` と書く必要がある
+  - owner が Cirlce の一員なので
+  - 集約の考えを用いて、この問題を解決する
