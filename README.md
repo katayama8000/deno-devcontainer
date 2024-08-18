@@ -1,11 +1,11 @@
 ## run
 
 ```bash
-deno run --allow-net --allow-env src/main.ts
+./run.sh
 ```
 
 ## format
 
 ```bash
-deno fmt src/main.ts
+./format.sh
 ```
