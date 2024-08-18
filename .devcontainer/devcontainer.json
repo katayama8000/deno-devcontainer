@@ -1,6 +1,6 @@
 {
   "name": "Deno DevContainer",
-  "dockerComposeFile": ["../compose.yml", "compose.yml"],
+  "dockerComposeFile": ["../compose.yaml", "compose.yaml"],
   "service": "deno_devcontainer",
   "workspaceFolder": "/workspace",
   "forwardPorts": [8080],

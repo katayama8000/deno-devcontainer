@@ -11,7 +11,7 @@ const main = async () => {
   try {
     promiseFunc();
   } catch (err) {
-    console.log("-----", err, "-----");
+    console.log(err);
   }
   console.timeEnd("func");
 };
