@@ -1,6 +1,6 @@
-import { CircleId } from "../valueObject/circleId";
-import { CircleName } from "../valueObject/circleName";
-import { User } from "./user";
+import { CircleId } from "../valueObject/circleId.ts";
+import { CircleName } from "../valueObject/circleName.ts";
+import { User } from "./user.ts";
 
 export class Circle {
   constructor(

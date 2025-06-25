@@ -1,5 +1,5 @@
-import { Circle } from "../entities/circle";
-import { ICircleRepository } from "../interface/circle.repository";
+import { Circle } from "../entities/circle.ts";
+import { ICircleRepository } from "../interface/circle.repository.ts";
 
 export class CircleService {
   private readonly ICircleRepository: ICircleRepository;

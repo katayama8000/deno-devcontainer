@@ -1,5 +1,5 @@
-import { User } from "../entities/user";
-import { UserId } from "../valueObject/userId";
+import { User } from "../entities/user.ts";
+import { UserId } from "../valueObject/userId.ts";
 
 export interface IUserRepository {
   // FIXME

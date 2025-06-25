@@ -1,6 +1,6 @@
-import { Circle } from "../entities/circle";
-import { CircleId } from "../valueObject/circleId";
-import { CircleName } from "../valueObject/circleName";
+import { Circle } from "../entities/circle.ts";
+import { CircleId } from "../valueObject/circleId.ts";
+import { CircleName } from "../valueObject/circleName.ts";
 
 export interface ICircleRepository {
   save(circle: Circle): void;

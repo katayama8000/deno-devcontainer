@@ -1,4 +1,4 @@
-import { UserId } from "../valueObject/userId";
+import { UserId } from "../valueObject/userId.ts";
 
 export class User {
   constructor(public name: string, public userId: UserId) {
